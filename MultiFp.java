@@ -10,7 +10,7 @@ class MultiFp{
 	float first = 2.9f;
 	float second = 4.7f;
 
-	float number = first*second; //multiply two floating numbers
+	float number = first*second; //multiply two floating numbers and store the value
 
 	System.out.println("Multiplication of two floating number is "+number);
 
