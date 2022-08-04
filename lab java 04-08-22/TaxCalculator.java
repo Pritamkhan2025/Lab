@@ -1,4 +1,7 @@
 package lab;
+/*
+*@pritam khan
+*/
 
 public class TaxCalculator {//
 	double taxAmount;
