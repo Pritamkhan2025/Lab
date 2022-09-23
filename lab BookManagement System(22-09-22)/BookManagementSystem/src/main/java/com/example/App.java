@@ -26,6 +26,7 @@ public class App
         	System.out.println("Press:2  Display Book details");
         	System.out.println("Press:3  Update Book price");
         	System.out.println("Press:4  Delete Book details");
+		System.out.println("Press:5  Exit");
         	
         	
         	int ch=sc.nextInt();
@@ -44,6 +45,9 @@ public class App
         		break;
         	case 4:
         		e.deleteBook();//calling this method for delete student details
+        		break;
+		case 5:
+        		System.exit(0);
         		break;
         	default:System.out.println("Invalid choice!");//for invalid choice
         	}
