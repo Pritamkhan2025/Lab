@@ -45,14 +45,14 @@ public class StudentController {
 	
 	//update student details in db table using rest api PutMapping based on id
 	@PutMapping("/updateS/{sid}")
-	public ResponseEntity<Student> updateStudent(@PathVariable("sid") int uid, @RequestBody Student student){
-			return new ResponseEntity<Student>(ss.updateStudentById(student, uid), HttpStatus.OK);
+	public ResponseEntity<Student> updateStudent(@PathVariable("sid") int sid, @RequestBody Student student){
+			return new ResponseEntity<Student>(ss.updateStudentById(student, sid), HttpStatus.OK);
 		}
 		
 		//delete student details in db table using rest api PutMapping based on id
 	@DeleteMapping("/deleteS/{sid}")
-	public ResponseEntity<String> deleteStudent(@PathVariable("sid") int uid){
-		ss.deleteStudentById(uid);
+	public ResponseEntity<String> deleteStudent(@PathVariable("sid") int sid){
+		ss.deleteStudentById(sid);
 		return new ResponseEntity<String>("Deleted Successfully", HttpStatus.OK);
 	}
 
